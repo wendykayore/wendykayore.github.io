@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="sticky-top p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center text-white text-decoration-none me-5">
+          <img class="logo me-2" src="./assets/img/logo.png" alt="Home">
+          <h4>Planet Pioneers</h4>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="/dashboard.html" class="nav-link px-2 text-secondary">Dashboard</a></li>
+          <li><a href="/map.html" class="nav-link px-2 text-white">Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="mt-4 mb-5 text-center">
+      <h1 class="fw-bold text-body-emphasis m-0">Extreme Heat Related Data</h1>
+    </div>
+
+    <div class="p-5 bg-body-tertiary shadow-sm">
+      <div class="container">
+        <h4 class="text-body-emphasis">Surface Temperature</h4>
+        
+        <div class="row mt-4">
+          <div class="col-5">
+            <iframe src="./assets/figures/SurfTemp.html" class="w-100" style="height: 300px;"></iframe>
+          </div>
+
+          <div class="col">
+            <img src="./assets/figures/SurfTemp_map.png" class="w-100" style="height: 300px;"></img>
+          </div>
+
+          <div class="col">
+            <img src="./assets/figures/SurfTemp_anim.gif" class="w-100" style="height: 300px;"></img>
+          </div>
+        </div>
+
+        <p class="text-center mt-3 mb-0">
+          Font: <a href="https://giovanni.gsfc.nasa.gov/giovanni/#service=ArAvTs&starttime=2002-09-01T00:00:00Z&endtime=2023-11-30T23:59:59Z&shape=state_dept_countries_2017/shp_32&&data=AIRS3STM_006_SurfSkinTemp_A(units%3DC)&portal=GIOVANNI&format=json" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">NASA's Giovanni | The Bridge Between Data and Science</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="p-5 mt-5 bg-body-tertiary shadow-sm">
+      <div class="container">
+        <h4 class="text-body-emphasis">Surface Temperature Through Years</h4>
+        
+        <div class="row mt-4">
+          <div class="col-8">
+            <iframe src="./assets/figures/ee_chart.html" class="w-100" style="height: 350px;"></iframe>
+          </div>
+
+          <div class="col-4">
+            <img src="./assets/figures/temp-average-ee.png" class="w-100" style="height: 350px;"></img>
+          </div>
+        </div>
+
+        <p class="text-center mt-3 mb-0">
+          Font: <a href="https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A1" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">MOD11A1.061 Terra Land Surface Temperature and Emissivity Daily Global 1km</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="p-5 mt-5 bg-body-tertiary shadow-sm">
+      <div class="container">
+        <h4 class="text-body-emphasis">Air Temperature at Surface</h4>
+        
+        <div class="row mt-4">
+          <div class="col-6">
+            <iframe src="./assets/figures/SurfAirTemp.html" class="w-100" style="height: 300px;"></iframe>
+          </div>
+
+          <div class="col">
+            <img src="./assets/figures/SurfAirTemp_map.png" class="w-100" style="height: 300px;"></img>
+          </div>
+
+          <div class="col">
+            <img src="./assets/figures/SurfAirTemp_anim.gif" class="w-100" style="height: 300px;"></img>
+          </div>
+        </div>
+
+        <p class="text-center mt-3 mb-0">
+          Font: <a href="https://giovanni.gsfc.nasa.gov/giovanni/#service=ArAvTs&starttime=2002-09-01T00:00:00Z&endtime=2016-10-31T23:59:59Z&bbox=-74.8828,-33.6182,-34.4531,6.46&data=AIRX3STM_006_SurfAirTemp_A(units%3DC)&portal=GIOVANNI&format=json" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">NASA's Giovanni | The Bridge Between Data and Science</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="p-5 my-5 bg-body-tertiary shadow-sm">
+      <div class="container">
+        <h4 class="text-body-emphasis">Relative Humidity</h4>
+        
+        <div class="row mt-4">
+          <div class="col-6">
+            <iframe src="./assets/figures/RelHum.html" class="w-100" style="height: 300px;"></iframe>
+          </div>
+
+          <div class="col">
+            <img src="./assets/figures/relHum_time_average_map.png" class="w-100" style="height: 300px;"></img>
+          </div>
+
+          <div class="col">
+            <img src="./assets/figures/relHum_anim.gif" class="w-100" style="height: 300px;"></img>
+          </div>
+        </div>
+
+        <p class="text-center mt-3 mb-0">
+          Font: <a href="https://giovanni.gsfc.nasa.gov/giovanni/#service=ArAvTs&starttime=2002-09-01T00:00:00Z&endtime=2023-11-30T23:59:59Z&bbox=-74.8828,-33.6182,-34.4531,6.46&data=AIRS3STM_006_RelHum_A_H2OPrsLvls_A(z%3D1000)&portal=GIOVANNI&format=json" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">NASA's Giovanni | The Bridge Between Data and Science</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
