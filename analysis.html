@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analysis</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+
+  <style>
+    .background {
+      background-color: #112530;
+    }
+
+    .background-satellite-1 {
+      background-color: #000;
+    }
+
+    .satellite-1 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 40%;
+      background: url(assets/img/satellite-1.jpg);
+      background-size: cover;
+      background-position: 100%;
+    }
+
+    .background-satellite-3 {
+      background-color: #010101;
+    }
+
+    .background-2-satellite-3 {
+      background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,1,1,1) 40%, rgba(0,0,0,0) 100%);
+    }
+
+    .satellite-3 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      background: url(assets/img/satellite-3.jpg);
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="sticky-top p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center text-white text-decoration-none me-5">
+          <img class="logo me-2" src="./assets/img/logo.png" alt="Home">
+          <h4>Planet Pioneers</h4>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="/dashboard.html" class="nav-link px-2 text-white">Dashboard</a></li>
+          <li><a href="/map.html" class="nav-link px-2 text-white">Map</a></li>
+          <li><a href="/analysis.html" class="nav-link px-2 text-secondary">Analysis</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="background text-white">
+    <div class="text-center py-5">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1" style="color: white !important;">Characteristics</h1>
+      <h3 class="fw-normal text-body-emphasis lh-1" style="color: white !important;">Monitoring Software Functionality</h3>
+    </div>
+
+    <div class="container-fluid">
+      <div class="container p-4">
+        <div class="row align-items-center">
+          <div class="col-7 pe-5">
+            <h2 class="fw-bold text-body-emphasis lh-1 mb-3" style="color: white !important;">Deforestation Monitoring with Landsat and VIIRS</h2>
+
+            <p class="lead">
+              <strong class="fw-bold">Objective:</strong> Utilize high spatial resolution images from Landsat and VIIRS satellites to monitor deforested areas over time.
+            </p>
+
+            <h3 class="fw-normal text-body-emphasis lh-1 mt-5" style="color: white !important;">How it can benefit the population:</h3>
+            <ul class="lead mt-3">
+              <li>Swift identification of deforested areas, enabling a more efficient response to illegal activities;</li>
+              <li>Facilitation of planning and implementation of reforestation strategies in critical regions;</li>
+              <li>Raising awareness among the population about the consequences of deforestation, promoting environmental consciousness.</li>
+            </ul>
+          </div>
+
+          <div class="col-5">
+            <img src="./assets/img/nasa-firms.jpg" style="width: 100%;" class="rounded-2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid position-relative p-5 mt-4 background-satellite-1">
+      <div class="satellite-1"></div>
+
+      <div class="container p-5 position-relative">
+        <div class="row flex-row-reverse">
+          <div class="col-7">
+            <p class="lead">
+              The active fire hotspots from Landsat provide spatial scale information that is valuable for contextualizing sub-daily observations 
+              from other products such as MODIS, VIIRS, and Harmonized Landsat-Sentinel (HLS)," she said. "Furthermore, there is now a greater 
+              opportunity to merge fine spatial scale hotspots from Landsat with fine temporal scale hotspots from existing sources using a 
+              seamless pipeline when accessing data through FIRMS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-4 mt-4">      
+      <div class="container p-4">
+        <div class="row align-items-center">
+          <div class="col-7 pe-5">
+            <h2 class="fw-bold text-body-emphasis lh-1 mb-3" style="color: white !important;">Temperature Analysis with MODIS</h2>
+
+            <p class="lead">
+              <strong class="fw-bold">Objective:</strong> Explore surface temperature data of the Earth using the MODIS dataset.
+            </p>
+
+            <h3 class="fw-normal text-body-emphasis lh-1 mt-5" style="color: white !important;">How it can benefit the population:</h3>
+            <ul class="lead mt-3">
+              <li>Monitoring temperature patterns to predict extreme weather events, such as heatwaves;</li>
+              <li>Identifying areas prone to significant climate changes, enabling local adaptations;</li>
+              <li>Supporting water resource management initiatives by considering the influence of temperature on water availability.</li>
+            </ul>
+          </div>
+
+          <div class="col-5">
+            <img src="./assets/img/satellite-2.jpg" style="width: 100%;" class="rounded-2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-4 mt-4">      
+      <div class="container px-4 pb-4">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <img src="./assets/img/table.jpg" style="height: 200px; width: 100%; object-fit: cover; object-position: top;" class="rounded-2">
+          </div>
+          
+          <div class="col-6 ps-5">
+            <p class="lead">
+              In the atmosphere, it helps us gain a comprehensive understanding of cloud properties and the percentage they cover on Earth. 
+              Finally, it assists us in monitoring active forest fires, changes in land use, and volcanic activity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid position-relative mt-4 background-satellite-3">
+      <div class="satellite-3"></div>
+
+      <div class="position-relative container p-4 background-2-satellite-3">
+        <div class="row align-items-center p-4">
+          <div class="col-7 py-5">
+            <h2 class="fw-bold text-body-emphasis lh-1 mb-3" style="color: white !important;">Soil Moisture Monitoring with SMAP</h2>
+
+            <p class="lead">
+              <strong class="fw-bold">Objective:</strong> Analyze data from the SMAP dataset to understand variations in soil moisture.
+            </p>
+
+            <h3 class="fw-normal text-body-emphasis lh-1 mt-5" style="color: white !important;">How it can benefit the population:</h3>
+            <ul class="lead mt-3">
+              <li>Identification of regions susceptible to drought, allowing the implementation of water resource management measures;</li>
+              <li>Support for agriculture by providing soil information to optimize irrigation practices;</li>
+              <li>Early warnings for communities dependent on agriculture, minimizing negative impacts of water scarcity.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
